@@ -1,0 +1,11 @@
+# 忽略 logs 文件夹
+code/logs
+
+# 忽略 __pycache__
+__pycache__
+
+# 忽略 .idea
+.idea
+
+# 忽略 clap 权重文件夹
+dataset/clap_weights

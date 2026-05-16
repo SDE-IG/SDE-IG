@@ -1,15 +1,12 @@
 import numpy as np
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
 import torch_geometric.data.batch as DataBatch
-from torch_geometric.nn import (ASAPooling, global_add_pool, global_max_pool,
-                                global_mean_pool)
 from utils.get_subgraph import relabel, split_batch
-from utils.mask import clear_masks, set_masks ,my_clear_masks,my_set_masks
+from utils.mask import set_masks ,my_clear_masks,my_set_masks
 
 from models.conv import GNN_node, GNN_node_Virtualnode
-from models.gnn import GNN, LeGNN
+from code.models.gnn import GNN, LeGNN
 from collections import  defaultdict
 import random
 

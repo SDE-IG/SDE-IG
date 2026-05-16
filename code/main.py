@@ -13,11 +13,9 @@ from tqdm import tqdm
 
 from ogb.graphproppred import Evaluator
 
-# 导入你刚才保存的 MalwareDataset
 from datasets.malware_dataset import MalwareDataset 
 
-# 你自己的模块导入
-from models.igm import IGM
+from models.SDE-IG import SDE-IG
 from utils.logger import Logger
 from utils.util import args_print, set_seed
 
@@ -203,8 +201,7 @@ def main():
     
     best_weights = None
     set_seed(args.seed)
-    
-    model = IGM(ratio=args.r,
+        model = SDE-IG(ratio=args.r,
                 input_dim=input_dim,
                 edge_dim=edge_dim,
                 out_dim=num_classes,

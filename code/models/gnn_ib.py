@@ -4,7 +4,7 @@ from torch_geometric.nn import LEConv, GCNConv, GINConv
 from torch_geometric.utils import subgraph, to_dense_adj
 import torch
 from models.conv import GNN_node, GNN_node_Virtualnode
-from models.gnn import LeGNN
+from code.models.gnn import LeGNN
 from utils.get_subgraph import relabel, split_batch, relabel_nodes
 import numpy as np
 from torch_geometric.utils import add_remaining_self_loops, degree
